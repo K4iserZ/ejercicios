@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let vartiableGlobal = 5;
+        function mifuncion1(){
+            let vartiableGlobal = "El valor es ";
+            alert (vartiableGlobal + vartiableGlobal);
+        }
+        mifuncion1();
+        function mifuction2(){
+            let vartiableGlobal = 7;
+            alert("Nuevo valor: "+(vartiableGlobal - vartiableGlobal));
+        }
+        function mostrarMensaje(){
+            alert ("Soy una alerta");
+
+        }
+    </script>
+    <script type="text/javascript" src="miscript.js"></script>
+</head>
+<body>
+    <button onclick="mostrarMensaje()">Mostrar</button>
+    <a href="javascript:msj()">Mensaje</a>
+    <a href="javascript:print()">Imrimir</a>
+    <a href="javascript:windo.location.reload()">Refrescar</a>
+    <button onclick="ejemplo1()">Saludos</button>
+    <button onclick="ejemplo2()">Saludo personalizado</button>
+    <button onclick="ejemplo3()">Suma de numeros</button>
+    <button onclick="ejemplo4()">Mostrar imagen</button>
+    <button onclick="ejemplo5()">Visitar pagina random</button>
+    <form>
+    <label>Ingrese nombre: </label>
+    <input type="text" name="nom" id="nombre">
+    <input type="button" onclick="ejemplo6()" name="aceptar" value="Aceptar">
+    </form>
+    <form>
+        <label>Habitualmente como se desplaza usted? </label><br>
+        <input type="radio" name="resp" value="Caminando">Caminando<br>
+        <input type="radio" name="resp" value="Bicicleta">Bicicleta<br>
+        <input type="radio" name="resp" value="Auto">Auto<br>
+        <input type="radio" name="resp" value="Microbus">Microbus<br>
+        <input type="radio" name="resp" value="Taxi">Taxi<br>
+        <input type="button" onclick="ejemplo7()" name="aceptar" value="Aceptar">
+    </form><br>
+    <form name="producto">
+        <label>Numero1</label>
+        <input type="text" name="nro1"><br>
+        <label>Numero2</label>
+        <input type="text" name="nro2"><br>
+        <label>Producto</label>
+        <input type="text" name="resultado"><br>
+        <input type="button" onclick="ejemplo8()" name="aceptar" value="Aceptar">
+    </form><br>
+    
+    <h1>Contador de Números Positivos y Negativos</h1>
+    <p>Ingresa una secuencia de números enteros. El programa contará la cantidad de números positivos y negativos. Ingresa 0 para finalizar.</p>
+
+    <input type="number" id="numeroInput">
+    <button onclick="ejercicio3()">Agregar Número</button>
+
+    <p>Cantidad de números positivos: <span id="positivos">0</span></p>
+    <p>Cantidad de números negativos: <span id="negativos">0</span></p><br>
+    <h1>EJERCICIO 1</h1>
+    <form3>
+        <label for="edad">Edad del cliente:</label>
+        <label for="monto">Monto total:</label>
+        <input type="number" id="monto" placeholder="Ingrese el monto total">
+        <input type="number" id="edad" placeholder="Ingrese su edad">
+        <button onclick="ejercicio1()">Calcular Descuento</button>
+        <label for="pagoFinal">Pago final:</label>
+        <span id="pagoFinal">$0.00</span>
+    </form3>
+    <form4>
+        <h1>EJERCICIO 2</h1>
+        <label for="nota1">Nota 1:</label>
+        <input type="number" id="nota1" placeholder="Ingrese la nota 1"><br>        
+        <label for="nota2">Nota 2:</label>
+        <input type="number" id="nota2" placeholder="Ingrese la nota 2"><br>       
+        <label for="nota3">Nota 3:</label>
+        <input type="number" id="nota3" placeholder="Ingrese la nota 3"><br>        
+        <button onclick="ejercicio2()">Calcular Promedio</button><br>       
+        <p>Promedio final: <span id="promedioFinal">-</span></p>
+        <p>Resultado: <span id="resultado">-</span></p>
+    </form4>
+    <form5>
+        <h1>EJERCICIO 3</h1>
+        <label for="numero">Ingrese un número:</label>
+        <input type="number" id="numero" placeholder="Ingrese un número">
+        <button onclick="ejercicio3()">Ingresar</button><br>        
+        <p>Cantidad de números positivos: <span id="positivos">0</span></p>
+        <p>Cantidad de números negativos: <span id="negativos">0</span></p>
+    </form5>
+    <form6>
+        <h1>EJERCICIO 4</h1>
+
+        <p>Ingrese los datos de los pacientes:</p>
+    
+        <label for="peso">Peso (en kilos):</label>
+        <input type="number" id="peso" placeholder="Ingrese el peso"><br>
+    
+        <label for="talla">Talla (en metros):</label>
+        <input type="number" id="talla" placeholder="Ingrese la talla"><br>
+    
+        <label for="genero">Género:</label>
+        <select id="genero">
+            <option value="niño">Niño</option>
+            <option value="niña">Niña</option>
+        </select><br>
+    
+        <button onclick="ejercicio4()">Registrar Paciente</button><br>
+        <p>Cantidad de niños que pesan más de 17 kilos: <span id="cantidadNiñosPesados">0</span></p>
+        <p>Cantidad de niñas que miden menos de 0.50 metros: <span id="cantidadNiñasBajas">0</span></p>
+        <p>Peso promedio de las niñas: <span id="pesoPromedioNiñas">0</span> kilos</p>
+        <p>Talla promedio de los niños: <span id="tallaPromedioNiños">0</span> metros</p>
+    </form6>
+
+
+</body>
+</html>
